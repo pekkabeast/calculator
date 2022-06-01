@@ -1,0 +1,77 @@
+#calculator {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "display display display display" "seven eight nine plus" "four five six sub" "one two three divi" "zero zero equal mult";
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#sub {
+    grid-area: sub;
+}
+
+#divi {
+    grid-area: divi;
+}
+
+#mult {
+    grid-area: mult;
+}
+
+#equal {
+    grid-area: equal;
+}
+
+#clear {
+    grid-area: clear;
+}
+
+.display {
+    border-style: solid;
+    background-color: grey;
+    grid-area: display;
+}
