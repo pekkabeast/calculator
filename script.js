@@ -18,16 +18,50 @@ function divide(a, b) {
 
 }
 
+
 function operate(a, b, operator) {
     if (operator == 'add') {
-        add(a, b);
-        console.log(add(a, b));
+        solution = add(a, b);
     } else if (operator == 'sub') {
-        subtract(a, b);
+        solution = subtract(a, b);
     } else if (operator == 'mult') {
-        multiply(a, b);
+        solution = multiply(a, b);
     } else if (operator == 'div') {
-        divide(a, b);
+        solution = divide(a, b);
+    }
+    return solution;
+}
+
+let num, operate1;
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach(addEvent);
+
+function addEvent(a) {
+    a.addEventListener('click', display);
+    
+}
+
+function display() {
+    const press = document.getElementById('display');
+    press.textContent = this.textContent;
+    
+    if (num)
+    if (this.id == 'plus' || this.id == 'sub' || this.id =='mult' || this.id =='divi'||this.id=='equal'){
+        operate1 = this.id;
+
+
+    }
+    else if(this.id =='clear'){
+        press.textContent = '0';
+
+    }
+    else{
+        num = this.textContent;
+        
+
     }
 
 }
+

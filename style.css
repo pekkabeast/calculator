@@ -70,8 +70,14 @@
     grid-area: clear;
 }
 
-.display {
+#display {
     border-style: solid;
     background-color: grey;
     grid-area: display;
+}
+
+#calculator {
+    width: 500px;
+    height: auto;
+    margin: auto;
 }
